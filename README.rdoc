@@ -1,6 +1,16 @@
-= sequel_fast_columns
+= Sequel fast columns
 
-Description goes here.
+Sequel's Dataset#columns method runs the dataset's query method and uses the
+keys from the first row as the column names. This can be very slow for some
+queries. This extension gets the columns from those specified in the query
+wherever possible, avoiding this performance hit.
+
+To use just:
+
+    require 'sequel'
+    require 'sequel/fast_columns'
+
+and carry on as normal.
 
 == Note on Patches/Pull Requests
  
