@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sequel_fast_columns}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roland Swingler"]
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/sequel/fast_columns.rb",
      "lib/sequel_fast_columns.rb",
+     "sequel_fast_columns.gemspec",
      "spec/sequel_fast_columns_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
