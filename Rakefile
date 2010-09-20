@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "sequel_fast_columns"
     gem.summary = %Q{A non-db-query implementation of Dataset#columns}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{A non-db-query implementation of Dataset#columns}
     gem.email = "roland.swingler@gmail.com"
     gem.homepage = "http://github.com/knaveofdiamonds/sequel_fast_columns"
     gem.authors = ["Roland Swingler"]
