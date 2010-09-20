@@ -4,7 +4,7 @@ module Sequel
       return @columns if @columns
       @columns = if opts[:select] 
         if opts[:select].map(&:class).any? {|x| x == Sequel::LiteralString } ||
-            (opts[:joins] && opts[:select].any? {|x| x == :* })
+            (opts[:join] && opts[:select].any? {|x| x == :* })
           query_db_for_columns
         else
           opts[:select].map do |column|
@@ -25,7 +25,7 @@ module Sequel
           end.flatten
         end
       else
-        if opts[:joins]
+        if opts[:join]
           query_db_for_columns
         else
           get_all_columns opts[:from]
